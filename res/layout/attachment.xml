@@ -14,7 +14,7 @@
      limitations under the License.
 -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    style="@style/attachment_container">
+                style="@style/attachment_container">
 
     <FrameLayout
         android:id="@+id/thumbnail"
@@ -29,7 +29,7 @@
 
         <!--  Attachment preview -->
         <ImageView android:id="@+id/attachment_thumbnail"
-            style="@style/attachment_thumbnail"/>
+                   style="@style/attachment_thumbnail"/>
 
     </FrameLayout>
 
@@ -42,22 +42,22 @@
         android:layout_toRightOf="@+id/thumbnail">
 
         <TextView android:id="@+id/attachment_name"
-            style="@style/attachment_name" />
+                  style="@style/attachment_name"/>
 
         <TextView android:id="@+id/attachment_size"
-            style="@style/attachment_size" />
+                  style="@style/attachment_size"/>
 
     </LinearLayout>
 
     <!-- Remove button -->
     <ImageView android:id="@+id/remove_attachment"
-        android:src="@drawable/ic_cancel_holo_light"
-        android:layout_width="24dip"
-        android:layout_height="24dip"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="8dip"
-        android:clickable="true"
-        android:layout_centerVertical="true"/>
+               android:src="@drawable/ic_cancel_holo_light"
+               android:layout_width="24dip"
+               android:layout_height="24dip"
+               android:layout_alignParentRight="true"
+               android:layout_marginRight="8dip"
+               android:clickable="true"
+               android:layout_centerVertical="true"/>
 
 
 </RelativeLayout>

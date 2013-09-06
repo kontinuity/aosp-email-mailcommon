@@ -22,12 +22,12 @@
     on a link in a message body. -->
 
 <TextView xmlns:android="http://schemas.android.com/apk/res/android"
-   android:id="@+id/title"
-   android:textAppearance="?android:attr/textAppearanceLarge"
-   android:textColor="@android:color/holo_blue_light"
-   android:layout_width="wrap_content"
-   android:layout_height="wrap_content"
-   android:maxLines="2"
-   android:paddingLeft="16dip"
-   android:paddingRight="16dip"
-   />
+          android:id="@+id/title"
+          android:textAppearance="?android:attr/textAppearanceLarge"
+          android:textColor="@android:color/holo_blue_light"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:maxLines="2"
+          android:paddingLeft="16dip"
+          android:paddingRight="16dip"
+    />

@@ -19,7 +19,7 @@
  -->
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+           xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="choosertitle_sharevia" msgid="8695355711548636633">"Ibahagi sa pamamagitan ng"</string>
     <string name="contextmenu_openlink" msgid="9094161900484295513">"Buksan sa Browser"</string>
     <string name="contextmenu_copy" msgid="4258345137871253670">"Kopyahin"</string>

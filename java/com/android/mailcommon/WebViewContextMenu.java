@@ -129,7 +129,7 @@ public abstract class WebViewContextMenu implements OnCreateContextMenuListener,
         try {
             mActivity.startActivity(Intent.createChooser(send, mActivity.getText(
                     getChooserTitleStringResIdForMenuType(MenuType.SHARE_LINK_MENU))));
-        } catch(android.content.ActivityNotFoundException ex) {
+        } catch (android.content.ActivityNotFoundException ex) {
             // if no app handles it, do nothing
         }
     }
@@ -141,7 +141,7 @@ public abstract class WebViewContextMenu implements OnCreateContextMenuListener,
     }
 
     public void onCreateContextMenu(ContextMenu menu, View v,
-            ContextMenuInfo info) {
+                                    ContextMenuInfo info) {
         // FIXME: This is copied over almost directly from BrowserActivity.
         // Would like to find a way to combine the two (Bug 1251210).
 
@@ -186,7 +186,7 @@ public abstract class WebViewContextMenu implements OnCreateContextMenuListener,
                 type == WebView.HitTestResult.GEO_TYPE);
         menu.setGroupVisible(getMenuGroupResId(MenuGroupType.ANCHOR_GROUP),
                 type == WebView.HitTestResult.SRC_ANCHOR_TYPE
-                || type == WebView.HitTestResult.SRC_IMAGE_ANCHOR_TYPE);
+                        || type == WebView.HitTestResult.SRC_IMAGE_ANCHOR_TYPE);
 
         // Setup custom handling depending on the type
         switch (type) {
@@ -194,8 +194,7 @@ public abstract class WebViewContextMenu implements OnCreateContextMenuListener,
                 String decodedPhoneExtra;
                 try {
                     decodedPhoneExtra = URLDecoder.decode(extra, Charset.defaultCharset().name());
-                }
-                catch (UnsupportedEncodingException ignore) {
+                } catch (UnsupportedEncodingException ignore) {
                     // Should never happen; default charset is UTF-8
                     decodedPhoneExtra = extra;
                 }
@@ -247,8 +246,7 @@ public abstract class WebViewContextMenu implements OnCreateContextMenuListener,
                 String geoExtra = "";
                 try {
                     geoExtra = URLEncoder.encode(extra, Charset.defaultCharset().name());
-                }
-                catch (UnsupportedEncodingException ignore) {
+                } catch (UnsupportedEncodingException ignore) {
                     // Should never happen; default charset is UTF-8
                 }
                 final MenuItem viewMapMenuItem =
@@ -303,6 +301,7 @@ public abstract class WebViewContextMenu implements OnCreateContextMenuListener,
 
     /**
      * Returns the menu type from the given resource id
+     *
      * @param menuResId resource id of the menu
      * @return MenuType for the specified menu resource id
      */
@@ -310,6 +309,7 @@ public abstract class WebViewContextMenu implements OnCreateContextMenuListener,
 
     /**
      * Returns the menu resource id for the specified menu type
+     *
      * @param menuType type of the specified menu
      * @return menu resource id
      */
@@ -317,6 +317,7 @@ public abstract class WebViewContextMenu implements OnCreateContextMenuListener,
 
     /**
      * Returns the resource id of the string to be used when showing a chooser for a menu
+     *
      * @param menuType type of the specified menu
      * @return string resource id
      */
@@ -324,6 +325,7 @@ public abstract class WebViewContextMenu implements OnCreateContextMenuListener,
 
     /**
      * Returns the resource id of the layout to be used for the title of the specified menu
+     *
      * @param menuType type of the specified menu
      * @return layout resource id
      */
@@ -331,6 +333,7 @@ public abstract class WebViewContextMenu implements OnCreateContextMenuListener,
 
     /**
      * Returns the menu group resource id for the specified menu group type.
+     *
      * @param menuGroupType menu group type
      * @return menu group resource id
      */

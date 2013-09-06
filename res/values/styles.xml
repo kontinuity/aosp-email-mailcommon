@@ -44,13 +44,13 @@
         <item name="android:textColor">@color/compose_label_text</item>
         <item name="android:paddingLeft">8dip</item>
         <item name="android:layout_gravity">center_vertical</item>
-     </style>
+    </style>
 
     <style name="RecipientComposeHeading" parent="@style/ComposeHeading">
         <item name="android:layout_marginRight">4dip</item>
         <item name="android:layout_marginTop">4dip</item>
         <item name="android:paddingLeft">0dip</item>
-     </style>
+    </style>
 
     <style name="ComposeFieldLayout" parent="android:Widget.Holo.Light.EditText">
         <item name="android:layout_height">wrap_content</item>
@@ -157,7 +157,8 @@
     <style name="AccountSpinnerAnchorTextPrimary" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
     </style>
 
-    <style name="AccountSpinnerAnchorTextSecondary" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Subtitle">
+    <style name="AccountSpinnerAnchorTextSecondary"
+           parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Subtitle">
         <item name="android:textColor">@color/actionbar_secondary</item>
     </style>
 

@@ -15,14 +15,14 @@
 -->
 
 <resources>
-    <add-resource type="style" name="RecipientEditTextViewStyle" />
-    <add-resource type="style" name="ComposeEditTextView" />
-    <add-resource type="style" name="LargeComposeAreaBody" />
-    <add-resource type="style" name="RecipientComposeFieldSpacer" />
-    <add-resource type="style" name="ComposeHeading" />
-    <add-resource type="style" name="RecipientComposeHeading" />
-    <add-resource type="style" name="ComposeFieldLayout" />
-    <add-resource type="style" name="RecipientComposeFieldLayout" />
-    <add-resource type="style" name="ComposeBodyStyle" />
-    <add-resource type="style" name="ComposeSubjectStyle" />
+    <add-resource type="style" name="RecipientEditTextViewStyle"/>
+    <add-resource type="style" name="ComposeEditTextView"/>
+    <add-resource type="style" name="LargeComposeAreaBody"/>
+    <add-resource type="style" name="RecipientComposeFieldSpacer"/>
+    <add-resource type="style" name="ComposeHeading"/>
+    <add-resource type="style" name="RecipientComposeHeading"/>
+    <add-resource type="style" name="ComposeFieldLayout"/>
+    <add-resource type="style" name="RecipientComposeFieldLayout"/>
+    <add-resource type="style" name="ComposeBodyStyle"/>
+    <add-resource type="style" name="ComposeSubjectStyle"/>
 </resources>

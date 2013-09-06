@@ -38,22 +38,21 @@ import android.widget.ListView;
  * and forwards certain events to those adapters. This widget also supports clickable but
  * unselectable dropdown items, useful when displaying extra items that should not affect spinner
  * selection state.</p>
- *
+ * <p/>
  * <p>The framework's Spinner widget can't be extended for this task because it uses a private list
  * adapter (which prevents setting multiple item types) and hides access to its popup, which is
  * useful for clients to know about (like when it's been opened).</p>
- *
+ * <p/>
  * <p>Clients must provide a set of adapters which the widget will use to load dropdown views,
  * receive callbacks, and load the selected item's view.</p>
- *
+ * <p/>
  * <p>Apps incorporating this widget must declare a custom attribute: "dropDownWidth" under the
  * "MultiAdapterSpinner" name as a "reference" format (see Gmail's attrs.xml file for an
  * example). This attribute controls the width of the dropdown, similar to the attribute in the
  * framework's Spinner widget.</p>
- *
  */
 public class MultiAdapterSpinner extends FrameLayout
-    implements AdapterView.OnItemClickListener, View.OnClickListener {
+        implements AdapterView.OnItemClickListener, View.OnClickListener {
 
     protected MergedAdapter<FancySpinnerAdapter> mAdapter;
     protected ListPopupWindow mPopup;
@@ -70,10 +69,12 @@ public class MultiAdapterSpinner extends FrameLayout
          * the spinner item view.
          */
         boolean canSelect(int position);
+
         /**
          * Handle a click on an enabled item.
          */
         void onClick(int position);
+
         /**
          * Fired when the popup window is about to be displayed.
          */
@@ -164,7 +165,7 @@ public class MultiAdapterSpinner extends FrameLayout
 
         if (position != mSelectedPosition) {
             final LocalAdapterPosition<FancySpinnerAdapter> result =
-                mAdapter.getAdapterOffsetForItem(position);
+                    mAdapter.getAdapterOffsetForItem(position);
 
             if (result.mAdapter.canSelect(result.mLocalPosition)) {
                 mSelectedPosition = position;

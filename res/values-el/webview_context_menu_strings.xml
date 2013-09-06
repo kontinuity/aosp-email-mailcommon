@@ -19,7 +19,7 @@
  -->
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+           xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="choosertitle_sharevia" msgid="8695355711548636633">"Κοινή χρήση μέσω"</string>
     <string name="contextmenu_openlink" msgid="9094161900484295513">"Άνοιγμα σε Πρόγραμμα περιήγησης"</string>
     <string name="contextmenu_copy" msgid="4258345137871253670">"Αντιγραφή"</string>
@@ -27,7 +27,8 @@
     <string name="contextmenu_dial_dot" msgid="1698333388313807445">"Κλήση..."</string>
     <string name="contextmenu_sms_dot" msgid="8870563605004576194">"SMS…"</string>
     <string name="contextmenu_add_contact" msgid="2720492380383163909">"Προσθήκη επαφής"</string>
-    <string name="contextmenu_send_mail" msgid="1599521001277247614">"Αποστολή μηνύματος ηλεκτρονικού ταχυδρομείου"</string>
+    <string name="contextmenu_send_mail" msgid="1599521001277247614">"Αποστολή μηνύματος ηλεκτρονικού ταχυδρομείου"
+    </string>
     <string name="contextmenu_map" msgid="827724648429662327">"Χάρτης"</string>
     <string name="contextmenu_sharelink" msgid="3043834627204106149">"Κοινή χρήση συνδέσμου"</string>
     <string name="contextmenu_help" msgid="3599842914619249472">"Βοήθεια"</string>
